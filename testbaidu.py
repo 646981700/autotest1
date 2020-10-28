@@ -40,20 +40,13 @@ def login():
 
 def climbStairs(self, n):
     if n <= 2:
-        return n             
+        return n
     temp_list = [0, 1, 2]
     for i in range(3, n + 1):
         temp_list.append(temp_list[-1] + temp_list[-2])
     return temp_list[-1]
 
 
-class A:
-    count = 0
-
-
-class B(A):
-    def __init__(self):
-        A.count += 1
 
 
 if __name__ == '__main__':
